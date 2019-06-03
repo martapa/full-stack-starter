@@ -1,0 +1,57 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start:client": "webpack-dev-server --open --mode development",
+    "start:server": "nodemon ./server/server.js",
+    "clean": "rimraf dist node_modules",
+    "test": "jest",
+    "lint": "eslint --fix ./client/src/components/*.jsx ./src/App.jsx ./src/index.jsx ./src/App.test.jsx ; exit 0"
+  },
+  "keywords": [],
+  "author": "Marta Paczkowska",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "react-test-renderer": "^16.8.6",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.2",
+    "express": "^4.17.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rimraf": "^2.6.3"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  }
+}
