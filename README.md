@@ -14,9 +14,16 @@ This boilerplate is for building full stack javascript application with Express,
 `npm run-script build`
 5. Run your app
 `npm run-script start:client`
+
+Run app with ESLint
+`npm run-script start:client:lint`
 App will automatically open in your browser [http://localhost:8080/](http://localhost:8080/).
+
 6. Start your Server
 `npm run-script start:server`
+
+Start server with ESLint
+`npm run-script start:server:lint`
 
 #### Some extras
 To start over and clean your project.
@@ -24,6 +31,11 @@ To start over and clean your project.
 
 To test the app.
 `npm test`
+
+Check code with ESLint
+`npm run-script lint:client`
+
+`npm run-script lint:server`
 
 ## Folder structure
 
